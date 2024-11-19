@@ -1,0 +1,146 @@
+*{margin: 0;}
+
+/****************************/
+/******Partie Header********/
+/***************************/
+
+header{background-color: #555; 
+       text-align: center;
+       width: 100%;
+       position: fixed;
+       padding: 1em;
+       z-index: 2;
+       top: 0;}
+
+header a{padding: 10%;
+    text-decoration: none;
+    color:pink;
+    padding:1em 5% ;}
+
+header a:hover{background-color: pink;
+          color: #555;}    
+
+nav a i{padding-left: 10px;}    
+
+aside u i{padding-right: 10px;
+          color: rgb(255, 0, 183);}
+
+
+a:hover{background-color: rgb(32, 30, 173);}
+
+/****************************/
+/******Partie Content********/
+/***************************/
+
+    main article img{
+        float: left;
+        clear:both;
+        padding-right: 5%;}
+    
+    main article{
+        margin: 1%;
+        padding: 6%;
+    border-bottom: solid 1px;
+    overflow: hidden;
+    position: relative;}
+
+    main article p{display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 6; /*Ajouter le nombre de ligne selon vos besoin*/
+                overflow: hidden;
+                font-size: medium;}  
+
+                
+    main article p span{ background-color: rgb(255, 0, 183);
+        border: solid 1px;
+        padding: 1em;
+        position:absolute;
+        bottom: 5%;
+        right: 0;
+    }
+    
+    main article p span i{color: white;
+                        padding-top: ;}
+
+    main article:nth-of-type(2n) img{
+        float:righ        }
+
+        main article:nth-of-type(2n) span{
+                left: 0;
+                right: auto;   }
+
+                main article:nth-of-type(2n) img{
+                    float:right        }            
+
+    span:last-of-type{:100px;}
+
+    span a{text-decoration: none;
+           color:white;}
+
+    span a:hover{color: rgb(255, 0, 183);
+                 background-color: white;}       
+
+    i:first-of-type{padding-left: 10px;}       
+
+
+    /****************************/
+/******Partie Side Bar********/
+/***************************/
+
+
+    main{width: 70%;}
+
+    
+    aside{position: absolute;
+        right: 0;
+        top: 0;
+        width: 20%;
+        margin-top: 8%;
+        margin-right: 2%;}    
+      
+
+    /****************************/
+/******Partie FOOTER********/
+/***************************/
+
+footer{background-color: #555;
+       font-size: medium;
+       color: rgb(255, 255, 255);
+       height: 80px;
+       width: 100%;
+       text-align: center;
+       bottom: 0;
+       -webkit-border: solid 5px;
+       z-index: 999}
+
+
+div{color: rgb(255, 0, 183);
+    font-size: 20px;}
+
+div i{padding-left: 20px;
+      padding-right: 20px;
+      color: rgb(255, 0, 183);}    
+
+div i:hover{background-color: white;}      
+    
+
+    /*******Pseudo classe******
+
+article:first-of-type{background-color: aqua;}    
+
+article:last-of-type{background-color: aqua;}
+
+article:nth-of-type(odd) /**Impair**
+
+article:nth-of-type(2n+1) /**Impair**
+
+article:nth-of-type(2n) /**pair**
+
+article:nth-of-type(even) /**pair**/
+
+      /*******Pseudo Elements******/
+
+
+p{ content: "Lorem";
+    color: rgb(255, 0, 183);
+                font-size: 130%;}
